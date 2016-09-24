@@ -1,0 +1,63 @@
+body {
+  background-color: teal;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  font-size: 56px;
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+
+/* Hover Effect */
+
+a:hover {
+  color: #FFFFFF;
+}
+
+.block-manager {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  clear: both;
+}
+
+
+/* After pseudo class */
+
+.block-manager:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.left-block,
+.right-block {
+  width: 50%;
+  float: left;
+  text-align: left;
+}
+
+.left-block img {
+  max-width: 100%;
+}
+
+
+/* Mobile View */
+
+@media (max-width: 768px) {
+  .left-block,
+  .right-block {
+    width: 100%;
+  }
+  /* Tablet View */
+  @media (max-width: 992px) {}
+}
